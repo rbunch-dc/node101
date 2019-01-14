@@ -11,7 +11,8 @@ const http = require('http');
 // an HTTP connection to this program
 const server = http.createServer((req, res)=>{
     console.log("Someone hit our HTTP server");
-    res.end('<h1>I went to Monday Night Garage!</h1>');
+    res.end('<h1>Go Chiefs!</h1>');
 });
 
-server.listen(3050);
+server.listen(3000);
+
