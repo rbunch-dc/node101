@@ -15,6 +15,12 @@ const server = http.createServer((req, res)=>{
         res.writeHead(200,{'content-type':'text/javascript'});
         const scriptFile = fs.readFileSync('scripts.js');
         res.end(scriptFile)
+    // }else if(req.url.indexOf('monster')>-1){
+    //     // the browser is looking fro monster.something
+    //     res.writeHead(200,{'content-type':'image/png'});
+    //     const scriptFile = fs.readFileSync(req.url);
+    //     res.end(scriptFile)
+    // }
     }else{
         res.writeHead(404,{'content-type':'text/html'})
         res.end("This page does not exist.")
